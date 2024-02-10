@@ -74,7 +74,7 @@ video_paths_commonbox = {
 
 def load_user_info():
     try:
-        with open('user_info.json', 'r') as file:
+        with open('main/user_info.json', 'r') as file:
             data = json.load(file)
             return data
     except (FileNotFoundError, json.decoder.JSONDecodeError):
